@@ -3,6 +3,7 @@ import { TypewriterEffect } from "./ui/typewriter-effect";
 import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
 import BentoGridCompo from "./BentoGridCompo";
+import Experience from "./Experience";
 import CanvasRevealEffectCompo from "./CanvasRevealEffectCompo";
 
 const Hero = () => {
@@ -11,8 +12,11 @@ const Hero = () => {
     { text: "I'm" },
     { text: "Monika," },
     { text: "a" },
-    { text: "web", className: "text-accent-blue" },
-    { text: "developer.", className: "text-accent-blue" },
+    { text: "Full", className: "text-accent-blue" },
+    { text: "Stack", className: "text-accent-blue" },
+    { text: "Developer", className: "text-accent-blue" },
+    { text: "&", className: "text-accent-blue" },
+    { text: "Freelancer.", className: "text-accent-blue" },
   ];
 
   return (
@@ -43,13 +47,14 @@ const Hero = () => {
 
           {/* Option 5: Code as Art */}
           <p className="my-5 text-primary font-mono text-md font-light text-center">
-            I sculpt web apps with speedy code —<br />
-            crafting UX that feels just right.
+            Building scalable, AI-powered applications —<br />
+            with seamless user experiences.
           </p>
         </div>
       </div>
       <BentoGridCompo />
       <Projects />
+      <Experience />
       <CanvasRevealEffectCompo />
       <Contact />
     </>

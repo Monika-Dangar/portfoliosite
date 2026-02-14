@@ -15,7 +15,7 @@ export const gridItems = [
     id: 1,
     title: "Eager to Learn and Grow",
     description:
-      "Freshly graduated and enthusiastic about diving into the tech industry, I'm committed to continuously expanding my skills and knowledge.",
+      "Software Engineer with 1 year of experience in developing and maintain scalable applications.",
     className: "md:col-span-1",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
@@ -34,7 +34,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently working on Job Finder project",
+    title: "Currently building a dubbing platform",
     description: "The Inside Scoop",
     className: "md:col-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -46,8 +46,26 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "CogniClear - AI Decision Journal",
+    des: "An AI-powered decision journal using Google Gemini Pro to identify cognitive biases, simulate outcomes, and challenge blind spots. Built for the Google Gemini API Developer Hackathon.",
+    img: "/cogni-clear.png",
+    iconLists: ["/re.svg", "/tail.svg", "/mongodb.svg", "/three.svg", "/nodejs.svg"],
+    linkName: "/cogni-clear.app",
+    link: process.env.NEXT_PUBLIC_COGNI_CLEAR_URL,
+  },
+  {
+    id: 2,
+    title: "AI Slack Agent",
+    des: "A robust Slack agent with automated draft reply generation, channel summarization, and tool-calling capabilities. Powered by Python, Flask, and Slack Events API.",
+    img: "/ai-slack-agent.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    linkName: "Check code",
+    link: process.env.NEXT_PUBLIC_AI_SLACK_AGENT_URL,
+  },
+  {
+    id: 3,
     title: "Pen & Paper",
-    des: "A platform for writers to share their creative works, including essays, poems, short stories, and thoughts. Readers can explore the content freely, without needing an account, and can engage by liking, commenting, and interacting with the content. Writers can authenticate, manage their content, and submit new works easily.",
+    des: "A platform for writers to share creative works. Features authentication, content management, and reader interaction. Built with MERN stack.",
     img: "pen-and-paper.png",
     iconLists: ["/re.svg", "/tail.svg", "/mongodb.svg", "/nodejs.svg"],
     linkName: "/pen-and-paper.app",
@@ -62,23 +80,22 @@ export const projects = [
     linkName: "/job-finder.app",
     link: process.env.NEXT_PUBLIC_JOB_FINDER_URL,
   },
+];
+
+export const workExperience = [
   {
-    id: 2,
-    title: "YouTube clone",
-    des: "Built a basic YouTube clone using HTML and CSS, replicating key interface elements such as video thumbnails and navigation. Enhanced my foundational skills in front-end desgin and responsive layout.",
-    img: "/YT-clone.png",
-    iconLists: ["/html.png", "/css.png"],
-    linkName: "/youtube-clone.site",
-    link: process.env.NEXT_PUBLIC_YOUTUBE_CLONE_URL,
+    id: 1,
+    title: "Full Stack Developer - mple.ai",
+    desc: "Optimized database queries (20% perf boost), built advanced analytics dashboard, and integrated GenAI systems (OpenAI Realtime, RAG, WhatsApp Calling).",
+    className: "md:col-span-2",
+    thumbnail: "/exp1.svg",
   },
   {
-    id: 3,
-    title: "Netflix clone",
-    des: "Developed an early-stage clone of Netflic using pure HTML and CSS. This project helped me gain foundational skills in front-end desgin and layout.",
-    img: "/Netflix-clone.png",
-    iconLists: ["/html.png", "/css.png"],
-    linkName: "/netflix-clone.site",
-    link: process.env.NEXT_PUBLIC_NETFLIX_CLONE_URL,
+    id: 2,
+    title: "Freelance Developer - StayFitPlease",
+    desc: "Built a comprehensive fitness platform for a gym trainer. Features: Trainee tracking (diet/workout), 1:1 scheduling, product store, and an AI context-aware bot for users.",
+    className: "md:col-span-2",
+    thumbnail: "/exp4.svg",
   },
 ];
 
@@ -90,25 +107,22 @@ export const interactiveCards = [
     text: [
       <p key="1">
         1. Nice to meet you! I'm Monika,{" "}
-        <span className="text-accent-blue">a Web Developer</span>.
+        <span className="text-accent-blue">a Full Stack Developer</span>.
       </p>,
       <p key="2">
-        2. I'm passionate about both{" "}
-        <span className="text-accent-blue">web design</span> and{" "}
-        <span className="text-accent-purple">web development</span>, with a
-        focus on <span className="text-accent-blue">front-end development</span>{" "}
-        and all its aspects. Here, I can best utilize both my{" "}
-        <span className="text-accent-purple">technical</span> and{" "}
-        <span className="text-accent-blue">creative</span> skills.
+        2. I'm passionate about{" "}
+        <span className="text-accent-blue">GenAI</span>,{" "}
+        <span className="text-accent-purple">System Architecture</span>, and building scalable
+        web applications.
       </p>,
       <p key="3">
-        3. <span className="text-accent-purple">Coding</span> for me is more
-        than just work—I enjoy{" "}
-        <span className="text-accent-blue">experimenting</span> with various{" "}
-        <span className="text-accent-purple">technologies</span> and maintaining{" "}
-        <span className="text-accent-blue">personal projects</span>. Whenever
-        possible, I contribute to open-source to give back to the community.
+        3. <span className="text-accent-purple">Coding</span> for me is about solving real problems.
+        I love working with <span className="text-accent-blue">LLMs</span> and{" "}
+        <span className="text-accent-purple">Real-time systems</span>.
       </p>,
+      <p key="4" className="mt-2">
+        4. I am also open to <span className="text-accent-blue">Freelancing</span> opportunities.
+      </p>
     ],
   },
   {

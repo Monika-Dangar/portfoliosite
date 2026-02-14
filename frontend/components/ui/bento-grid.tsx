@@ -42,8 +42,8 @@ export const BentoGridItem = ({
   spareImg?: string;
 }) => {
   const leftLists = ["ReactJS", "Express", "Javascript"];
-  const rightLists = ["MongoDB", "NodeJS", "Tailwind CSS"];
-
+  const middleLists = ["MongoDB", "NodeJS", "Tailwind CSS"];
+  const rightLists = ["Typscript", "GenAI", "AWS"];
   return (
     <div
       className={cn(
@@ -96,7 +96,18 @@ export const BentoGridItem = ({
             <div className="flex gap-1 md:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-8">
+                <span className="py-2 px-3 md:py-4 md:px-3 rounded-lg text-center bg-transparent"></span>
                 {leftLists.map((item, i) => (
+                  <span
+                    key={i}
+                    className="py-2 px-3 md:py-4 md:px-3 text-xs md:text-base rounded-lg text-center bg-accent-purple/20 text-accent-purple hover:bg-accent-purple/40 transition tech-stack-item"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <div className="flex flex-col gap-3 md:gap-8">
+                {middleLists.map((item, i) => (
                   <span
                     key={i}
                     className="py-2 px-3 md:py-4 md:px-3 text-xs md:text-base rounded-lg text-center bg-accent-blue/20 text-accent-blue hover:bg-accent-blue/40 transition tech-stack-item"
