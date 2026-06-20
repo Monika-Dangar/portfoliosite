@@ -4,6 +4,7 @@ import Projects from "./projects/Projects";
 import Contact from "./contact/Contact";
 import BentoGridCompo from "./BentoGridCompo";
 import Experience from "./Experience";
+import Blog from "./Blog";
 import CanvasRevealEffectCompo from "./CanvasRevealEffectCompo";
 
 const Hero = () => {
@@ -55,6 +56,7 @@ const Hero = () => {
       <BentoGridCompo />
       <Projects />
       <Experience />
+      <Blog />
       <CanvasRevealEffectCompo />
       <Contact />
     </>

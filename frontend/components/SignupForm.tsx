@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Lottie from "react-lottie";
+import dynamic from "next/dynamic";
 import animationData from "../data/confetti.json";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { cn } from "@/lib/utils";
@@ -8,6 +8,8 @@ import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./MagicButton";
+
+const Lottie = dynamic(() => import("react-lottie"), { ssr: false });
 import { TypewriterEffect } from "./ui/typewriter-effect";
 
 interface IFormInput {

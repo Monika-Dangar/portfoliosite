@@ -14,7 +14,7 @@ const Experience = () => {
             <TypewriterEffect words={typeWriterText} />
 
             <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
-                {workExperience.map((card) => (
+                {[...workExperience].reverse().map((card) => (
                     <div
                         key={card.id}
                         className="flex-1 relative overflow-hidden rounded-3xl border border-gray-700 group hover:shadow-xl transition duration-200 shadow-none flex flex-col p-5 lg:p-10 gap-2 md:col-span-2"

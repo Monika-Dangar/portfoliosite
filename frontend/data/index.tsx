@@ -82,6 +82,22 @@ export const projects = [
   },
 ];
 
+export const blogs = [
+  {
+    id: 1,
+    title: "How I Optimized Slow MongoDB Queries and Reduced Latency by 95%",
+    des: "Optimized MongoDB query performance by analyzing bottlenecks, implementing efficient indexing strategies, and refining database operations, resulting in up to 95% reduction in API response latency and significantly improved application performance.",
+    url: "https://medium.com/@dangarmonika191023/how-i-optimized-slow-mongodb-queries-and-reduced-latency-by-95-83f447a6467e",
+  },
+  {
+    id: 2,
+    title: "I Spent Days Searching for an Aadhaar eKYC API… Here’s What I Learned",
+    des: "Explored Aadhaar eKYC API integration challenges, evaluated multiple verification providers, and documented key considerations for implementing secure, compliant, and reliable identity verification workflows in modern applications.",
+    url: "https://medium.com/@dangarmonika191023/i-spent-days-searching-for-an-aadhaar-ekyc-api-heres-what-i-learned-267d71ba418f",
+  }
+];
+
+
 export const workExperience = [
   {
     id: 1,
@@ -90,10 +106,17 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
+  // {
+  //   id: 2,
+  //   title: "Freelance Developer - StayFitPlease",
+  //   desc: "Built a comprehensive fitness platform for a gym trainer. Features: Trainee tracking (diet/workout), 1:1 scheduling, product store, and an AI context-aware bot for users.",
+  //   className: "md:col-span-2",
+  //   thumbnail: "/exp4.svg",
+  // },
   {
     id: 2,
-    title: "Freelance Developer - StayFitPlease",
-    desc: "Built a comprehensive fitness platform for a gym trainer. Features: Trainee tracking (diet/workout), 1:1 scheduling, product store, and an AI context-aware bot for users.",
+    title: "Software Developer - B2WInfoTech.ai",
+    desc: "Led backend development efforts at B2WInfoTech.ai, specializing in backend architecture, API development, database design, system scalability, and performance optimization. Built secure, maintainable, and high-performance server-side solutions for modern web applications.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },

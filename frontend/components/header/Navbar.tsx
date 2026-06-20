@@ -61,12 +61,20 @@ const Navbar = () => {
               <span className="text-lg font-medium">myBuilds()</span>
             </Link>
             <Link
+              href={"#blogs"}
+              onClick={() => setNavbarOpen(!navbarOpen)}
+              className="flex flex-col items-center text-3xl text-primary hover:text-accent-blue transition-colors duration-200"
+            >
+              <VscTerminal />
+              <span className="text-lg font-medium">recentBlogs()</span>
+            </Link>
+            <Link
               href={"#contact"}
               onClick={() => setNavbarOpen(!navbarOpen)}
               className="flex flex-col items-center text-3xl text-primary hover:text-accent-blue transition-colors duration-200"
             >
               <HiOutlineLink />
-              <span className="text-lg font-medium">reactOut()</span>
+              <span className="text-lg font-medium">reachOut()</span>
             </Link>
           </nav>
         </div>
@@ -90,6 +98,15 @@ const Navbar = () => {
               <VscBracketDot />
               <span className="absolute left-full ml-2 top-1/2 transform -translate-y-1/2 whitespace-nowrap bg-secondary text-primary text-sm rounded-md py-1 px-2 border border-accent-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 myBuilds()
+              </span>
+            </Link>
+            <Link
+              href={"#blogs"}
+              className="relative group text-3xl text-primary hover:text-accent-blue transition-colors duration-200"
+            >
+              <VscTerminal />
+              <span className="absolute left-full ml-2 top-1/2 transform -translate-y-1/2 whitespace-nowrap bg-secondary text-primary text-sm rounded-md py-1 px-2 border border-accent-blue opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                recentBlogs()
               </span>
             </Link>
             <Link
